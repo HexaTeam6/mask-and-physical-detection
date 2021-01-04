@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 # re-size all the images to this
 IMAGE_SIZE = [224, 224]
 
-train_path = 'dataset/Training_set'
-valid_path = 'dataset/Test_set'
+train_path = 'dataset/train'
+valid_path = 'dataset/test'
 
 # add preprocessing layer to the front of VGG
 vgg = VGG16(input_shape=IMAGE_SIZE + [3], weights='imagenet', include_top=False)
@@ -25,7 +25,7 @@ for layer in vgg.layers:
 
   
   # useful for getting number of classes
-folders = glob('dataset/Training_set/*')
+folders = glob('dataset/train/*')
   
 
 # our layers - you can add more if you want
@@ -56,12 +56,12 @@ train_datagen = ImageDataGenerator(rescale = 1./255,
 
 test_datagen = ImageDataGenerator(rescale = 1./255)
 
-training_set = train_datagen.flow_from_directory('dataset/Training_set',
+training_set = train_datagen.flow_from_directory('dataset/train',
                                                  target_size = (224, 224),
                                                  batch_size = 32,
                                                  class_mode = 'categorical')
 
-test_set = test_datagen.flow_from_directory('dataset/Test_set',
+test_set = test_datagen.flow_from_directory('dataset/test',
                                             target_size = (224, 224),
                                             batch_size = 32,
                                             class_mode = 'categorical')
