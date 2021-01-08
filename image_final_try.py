@@ -23,7 +23,7 @@ def load_image(filename):
     return img
 
 # Load an image and predict the apparel class
-filepath='/home/shoumik/Desktop/face-mask-detector shoumik/Kriti-Kharbanda.jpg'
+filepath='./dataset/train/with_mask/106.jpg'
 img = load_image(filepath)
 # Load the saved model
 model = load_model('Mask_detector_model.h5')
