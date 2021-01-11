@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Wed May 13 13:42:27 2020
-
-@author: shoumik
-"""
 
 import cv2
 from keras.models import load_model
@@ -19,7 +14,7 @@ model=load_model('Mask_detector_model.h5')
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 
 #webcam face recognition
-video_capture=cv2.VideoCapture(1)
+video_capture=cv2.VideoCapture(0)
 while True:
     _,frame=video_capture.read()
     faces=face_cascade.detectMultiScale(frame,1.3,5)
