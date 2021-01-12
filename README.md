@@ -16,5 +16,3 @@ Dibuat oleh
 <li> Untuk social distancing detection pertama donwload
 
 [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights "Pre - training Model") lalu pindahkan file `yolov3.weights` ke folder yolo.coco\
-
-<li>
