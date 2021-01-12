@@ -14,7 +14,7 @@ model=load_model('Mask_detector_model.h5')
 face_cascade=cv2.CascadeClassifier('haarcascade_frontalface_alt.xml')
 
 #webcam face recognition
-video_capture=cv2.VideoCapture(0)
+video_capture=cv2.VideoCapture(1)
 while True:
     _,frame=video_capture.read()
     faces=face_cascade.detectMultiScale(frame,1.3,5)

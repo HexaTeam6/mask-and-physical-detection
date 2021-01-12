@@ -3,8 +3,8 @@
 # python social_distance_detector.py --input pedestrians.mp4 --output output.avi
 
 # import the necessary packages
-from TheLazyCoder import social_distancing_config as config
-from TheLazyCoder.detection import detect_people
+from DetectPeps import social_distancing_config as config
+from DetectPeps.detection import detect_people
 from scipy.spatial import distance as dist
 import numpy as np
 import argparse
