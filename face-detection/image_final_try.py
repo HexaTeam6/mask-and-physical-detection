@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-Created on Thu May 14 15:24:03 2020
-
-@author: shoumik
-"""
 
 # Import few more necessary libraries.
 import cv2

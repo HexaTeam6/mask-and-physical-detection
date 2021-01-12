@@ -1,6 +1,6 @@
 ## Final Project Kecerdasan Komputasional
 
-#### Mask Detection and Social Distancing Detection using NN and YOLO Pre-Training
+#### Mask Detection and Social Distancing Detection using VGG16 and YOLO Pre-Training
 
 ---
 
@@ -10,9 +10,15 @@ Dibuat oleh
 <li > 0511184000056 - Herri Purba
 <li > 0511184000139 - Dohan Pranata W.
 
-##### How to run Program ?
+##### Bagaimana cara menjalankan program ?
 
 <ol>
 <li> Untuk social distancing detection pertama donwload
 
 [yolov3.weights](https://pjreddie.com/media/files/yolov3.weights "Pre - training Model") lalu pindahkan file `yolov3.weights` ke folder yolo.coco\
+
+<li> Untuk Mask Detection <br>
+  - install semua requirement pada file reqirement.txt <br> 
+  - untuk membuat model jalankan model_training.py <br>
+  - untuk mendeteksi menggunakan webcam jalankan webcam_try.py <br>
+  - untuk mendeteksi menggunakan gamber jalankan image_final_try.py <br>
