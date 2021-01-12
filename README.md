@@ -1,4 +1,4 @@
-## Final Project Kecerdasan Komputational
+## Final Project Kecerdasan Komputasional
 
 #### Mask Detection and Social Distancing Detection using NN and YOLO Pre-Training
 
