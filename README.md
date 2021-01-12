@@ -1,4 +1,4 @@
-## Final Project Kecerdasan Buatan
+## Final Project Kecerdasan Komputational
 
 #### Mask Detection and Social Distancing Detection using NN and YOLO Pre-Training
 
